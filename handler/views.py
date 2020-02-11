@@ -19,9 +19,7 @@ class ViewClicksInfo(APIView):
     model_columns = ['date','channel','country','os','impressions','clicks','installs','spend','revenue', 'cpi']
     
     numerical_columns = ['date', 'impressions', 'clicks', 'installs', 'spend', 'revenue', 'cpi']
-    
-    aggregate_columns = ['impressions', 'clicks', 'installs', 'spend', 'revenue', 'cpi']
-    
+
     '''
     API FLAGS:
     
@@ -31,6 +29,7 @@ class ViewClicksInfo(APIView):
     group=date,channel,country,os,impressions,clicks,installs,spend,revenue
     sorted=column_name,ascending or descending
     cpi=true or false
+    include_only=any string
     
     divider: &
     '''
