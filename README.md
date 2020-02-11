@@ -78,7 +78,6 @@ The API parser is robust - the order of flags does not matter, and it can handle
 When the request URL is simply 127.0.0.1:8000/clicks_info/, the returned tables will show up in their default form.
 The default is: All dates, all columns, no grouping, no cpi, sorted by date in descending order.
 
-
 ### Specific use case urls:
 
 **1. Show the number of impressions and clicks that occurred before the 1st of June 2017, broken down by channel and country, sorted by clicks in descending order.**
@@ -118,7 +117,11 @@ Is also perfectly valid and will return the same results.
 
 ## The Database
 
-The database resides in the database folder, under the name clicksinfo_db.sqlite3.
+The database in question is a small sample of a database of clicks and impressions, with the columns:
+date, channel, country, os, impressions, clicks, installs, spend, revenue.
+
+The database resides in the database folder, under the name clicksinfo_db.sqlite3. It is also stored as the original CSV in the same folder.
+When loaded, it is loaded from the sqlite3 db file, so the CSV file can be disregarded.
 The database is already loaded. However, if you wish to re-load the database, you can do so by first flushing it:
 
 **Flushing the Database**
@@ -138,3 +141,9 @@ import_log = LoadDB('database/clicksinfo_db.sqlite3').load_db()
 ```
 Where import_log contains all row numbers and their import status.
 During the import each row will also give real-time feedback to it's import status.
+
+# Further details:
+The superuser is: admin
+Password is: admin
+
+This repo was made in response to a task by Adjust.
