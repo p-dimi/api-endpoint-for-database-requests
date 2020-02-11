@@ -12,7 +12,7 @@ My local Django server host as of writing this is 127.0.0.1:8000/ therefore I wi
 API flags:
 
 **1:
-date_from
+date_from and 
 date_to**
 
 The date_to and date_from flags are by default inclusive. If a date_to is set to 2017-06-01, for instance, then dates before and including the first of June will be shown.
