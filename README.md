@@ -59,14 +59,11 @@ include_only**
 
 The include_only flag is a special flag that allows to flexibly input any string or set of strings separated by comma, with the expectation that the output data will contain those strings.
 
-For example: include_only=ios will ensure that the output will only show models which have "ios" in one of their fields.
+For example: include_only=ios < -- will show only tables which have "ios" in one of their requested columns.
 
-Second example: include_only=ios,US will ensure that only models which have "US" and "ios" will be returned in the response.
-It is case sensitive.
+Second example: include_only=US,2017-06-01 <- will show only tables whose requested columns contain US and 2017-06-01.
 
 The user should be careful to make sure to include the column the expect to find the include_only string in, either in columns, group, or sorted.
-
-Example: include_only=US,2017-06-01 <- will show only tables whose requested columns contain US and 2017-06-01
 
 **Format:**
 
