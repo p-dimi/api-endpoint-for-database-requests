@@ -3,7 +3,7 @@ Django based Rest API endpoint for retrieving specified information from a datab
 
 This is a Rest API written in Django and Python, with a custom handler, capable of receiving GET requests and sending back information from a database according to the parameters specified in the request URL.
 
-The base URL is: (your local Django server host)/clicks_info/
+The base URL is: (your local Django server host)/clicks_info
 
 With API flags: (your local Django server host)/clicks_info/api_flags
 
