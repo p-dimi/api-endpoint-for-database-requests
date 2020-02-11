@@ -64,6 +64,7 @@ For example: include_only=ios < -- will show only tables which have "ios" in one
 Second example: include_only=US,2017-06-01 <- will show only tables whose requested columns contain US and 2017-06-01.
 
 The user should be careful to make sure to include the column the expect to find the include_only string in, either in columns, group, or sorted.
+It is case sensitive.
 
 **Format:**
 
