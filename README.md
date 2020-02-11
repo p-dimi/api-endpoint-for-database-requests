@@ -147,3 +147,5 @@ The superuser is: admin
 Password is: admin
 
 This repo was made in response to a task by Adjust.
+
+It is worth noting that this is a task I have learned to execute over the span of two days, as I had not done this or anything like this before, and hope that this speaks to my fast learning and dedication.
