@@ -72,11 +72,9 @@ Each flag is separated by the symbol &.
 
 The symbol = denotes the value of the flag.
 
-Commas (,) represent multiples of values.
+Commas (,) separate multiples of values.
 
-Example of a URL using the API:
-
-127.0.0.1:8000/clicks_info/date_from=2017-05-20&date_to=2017-06-20&columns=date,country
+Example of a URL using the API: 127.0.0.1:8000/clicks_info/date_from=2017-05-20&date_to=2017-06-20&columns=date,country
 
 The API parser is robust - the order of flags does not matter, and it can handle if a column is requested in group or in sorted, but not specified in columns, by assuming that columns grouped or sorted by are also expected to be seen.
 
