@@ -1,5 +1,7 @@
 # api-endpoint-for-database-requests
-Django based Rest API endpoint for retrieving specified information from a database
+Django based Rest API endpoint for retrieving specified information from a database.
+
+This repo is an experiment in the creation of a completely custom handler and parser app, with the intention to break down the processes and mechanisms involved for better understanding. The intention was *not* to make clean production level code.
 
 This is a Rest API written in Django and Python, with a custom handler, capable of receiving GET requests and sending back information from a database according to the parameters specified in the request URL.
 
@@ -148,7 +150,3 @@ During the import each row will also give real-time feedback to it's import stat
 # Further details:
 The superuser is: admin
 Password is: admin
-
-This repo was made in response to a task by Adjust.
-
-It is worth noting that this is a task I have learned to execute over the span of two days, as I had not done this or anything like this before, and hope that this speaks to my fast learning and dedication.
